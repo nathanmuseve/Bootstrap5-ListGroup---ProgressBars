@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Bootstrap5</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css">
+</head>
+<body>
+	<section class="container border shadow border rounde-3">
+		<h1 class="text-center text-primary">Leaning Bootatrap5- <b>List-Groups</b></h1>
+		<h2 class="text-center text-danger">horizontal lists</h2>
+		<p>classes,<b>action for hover effect</b> <b>active for active cell</b> the ul container is horizontantally placed with class <b>list-group-horizontal</b></p>
+		<ul class="list-group list-group-numbered list-group-horizontal border rounded-2 justify-content text-center gap-2">
+			<li class="list-group-item-action active bg-warning active">List1</li>
+			<li class="list-group-item-action bg-success">List2</li>
+			<li class="list-group-item-action bg-danger">List3</li>
+			<li class="list-group-item-action bg-light disabled">List4</li>
+			<li class="list-group-item-action bg-info disabled">List5</li>
+		</ul>
+		<div>
+			<h2 class="text-center text-danger">Vertical lists</h2>
+			<ul class="list-group list-group-numbered list-group-vertical border rounded-2 justify-content text-center gap-3">
+				<li class="list-group-item-action active bg-warning active">List1</li>
+				<li class="list-group-item-action bg-success">List2</li>
+				<li class="list-group-item-action bg-danger">List3</li>
+				<li class="list-group-item-action bg-light">List4</li>
+				<li class="list-group-item-action bg-info">List5</li>
+			</ul>
+		</div>
+		<!-- Flush/remove borders -->
+		<div>
+			<h2 class="text-center text-danger">Flush/remove borders</h2>
+			<p>Use the <b>.list-group-flush</b> on <b>ul</b> class to remove some borders and rounded corners:</p>
+			<ul class="list-group list-group-numbered list-group-vertical justify-content text-center gap-3 list-group-flush">
+				<li class="list-group-item-action active bg-warning active">List1</li>
+				<li class="list-group-item-action bg-success">List2</li>
+				<li class="list-group-item-action bg-danger">List3</li>
+				<li class="list-group-item-action bg-light">List4</li>
+				<li class="list-group-item-action bg-info">List5</li>
+			</ul>
+		</div>
+		<!-- List Group with Badges -->
+		<div>
+			<h2 class="text-center text-danger">List Group with Badges</h2>
+			<p>Combine <b>.badge</b> classes with utility/helper classes to add <b>badges</b> inside the list group:</p>
+			<ul class="list-group border rounded-3">
+				<li class="list-group d-flex justify-content-between">Inbox
+					<span class="badge bg-primary rounded-pill">67</span>
+				</li>
+				<li class="list-group-item d-flex justify-content-between">Ads
+					<span class="badge bg-primary rounded-pill">77</span>
+				</li>
+				<li class="list-group-item d-flex justify-content-between">Messenger
+					<span class="badge bg-primary rounded-pill">5</span>
+				</li>
+				<li class="list-group-item d-flex justify-content-between">light
+					<span class="badge bg-primary rounded-pill">27</span>
+				</li>
+			</ul>
+		</div>
+		<!-- Learning badges -->
+		<div>
+			<h2 class="text-center text-danger">Learning badges.</h2>
+			<p><b>Badges are used to add additional information to the content</b>we use <b>badge</b> class</p>
+			<p>Use the <b>.badge</b> class together with a contextual class <b>(like .bg-secondary)</b> within <b><span></span></b> elements to create rectangular badges. Note that badges scale to match the size of the parent element (if any):</p>
+			<div>
+				<ol class="list-group border border-primary">
+					<li class="list-group-item bg-light d-flex justify-content-between">Messenger
+						<span class="badge bg-primary rounded-rect">NEW</span>
+					</li>
+					<li class="list-group-item bg-light d-flex justify-content-between">classs
+						<span class="badge bg-primary rounded-rect">F4E-New</span>
+					</li>
+					<li class="list-group-item bg-light d-flex justify-content-between">Admin No
+						<span class="badge bg-primary rounded-rect">234</span>
+					</li>
+					<li class="list-group-item bg-light d-flex justify-content-between">Trendind Video
+						<span class="badge bg-primary rounded-rect">New</span>
+					</li>
+				</ol>
+			</div>
+		</div>
+	</section>
+	<!-- END OF LIST_GROUP SECTION --> 
+
+	<!-- START OF PROGRESS_BAR SECTUION -->
+	<section class="container shadow pt-3 pb-3 my-3">
+    <h2 class="text-center text-warning">Basic Progress Bars</h2>
+    <p>A progress bar can be used to show how far a user is in a process.</p>
+    <p>We use the <b>progress</b> class in the first div of the section and the <b>progress-bar</b> class within the nested divs.</p>
+    <h3>Skills</h3>
+    <div class="w-50">HTML
+      <div class="progress" style="height: 1.8rem;">
+        <div class="progress-bar bg-danger text-center " style="width: 85%; height: 3rem;">85%</div>
+      </div>
+    </div>
+		<br>
+    <div class="w-50">CSS
+      <div class="progress progress-flush" style="height: 1.8rem;">
+        <div class="progress-bar bg-info text-center" style="width: 70%; height: 3rem;">70%</div>
+      </div>
+    </div>
+		<div class="w-50">JS
+      <div class="progress progress-flush" style="height: 1.8rem;">
+        <div class="progress-bar bg-success" style="width: 10%; height: 3rem;">10%</div>
+      </div>
+    </div>
+
+		<!-- Start of stripped progress-bar -->
+		<h2 class="text-warning text-center">stripped progress-bar</h2>
+		<p>Use the <b>.progress-bar-striped</b> class in the inner div with <b>.progress-bar</b> class to add stripes to the progress bars:</p>
+		<div class="w-50">HTML
+      <div class="progress" style="height: 1.8rem;">
+        <div class="progress-bar bg-danger progress-bar-striped" style="width: 85%; height: 3rem;">85%</div>
+      </div>
+    </div>
+		<br>
+    <div class="w-50">CSS
+      <div class="progress progress-flush" style="height: 1.8rem;">
+        <div class="progress-bar bg-info progress-bar-striped" style="width: 70%; height: 3rem;">70%</div>
+      </div>
+    </div>
+		<div class="w-50">JS
+      <div class="progress progress-flush" style="height: 1.8rem;">
+        <div class="progress-bar bg-success progress-bar-striped" style="width: 10%; height: 3rem;">10%</div>
+      </div>
+    </div>
+		<!-- Animated Progress Bar + stripped -->
+		<h2 class="text-warning text-center">Animated Progress Bar</h2>
+		<p>Add the <b>.progress-bar-animated</b> class in the inner div with <b>.progress-bar</b>  to animate the progress bar:</p>
+		<div class="w-50">HTML
+      <div class="progress" style="height: 1.8rem;">
+        <div class="progress-bar bg-danger progress-bar-striped progress-bar-animated" style="width: 85%;">85%</div>
+      </div>
+    </div>
+		<br>
+    <div class="w-50">CSS
+      <div class="progress" style="height: 1.8rem;">
+        <div class="progress-bar bg-info progress-bar-striped progress-bar-animated" style="width: 70%;">70%</div>
+      </div>
+    </div>
+		<div class="w-50">JS
+      <div class="progress" style="height: 1.8rem;">
+        <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" style="width: 10%;">10%</div>
+      </div>
+    </div>
+		<!-- Multiple Progress Bars -->
+		<h2>Multiple Progress Bars</h2>
+		<p>Progress bars can also be stacked:</p>
+		<div class="w-50">
+		  <div class="progress" style="height: 1.8rem;">
+			  <div class="progress-bar bg-danger text-light progress-bar-striped progress-bar-animated" style="width: 80%; height: 3rem;">
+			   Danger-80%
+			  </div>
+			  <div class="progress-bar bg-warning progress-bar-striped progress-bar-animated" style="width: 15%; height: 3rem;">
+				 Warning-15%
+				</div>
+				<div class="progress-bar bg-info progress-bar-striped progress-bar-animated" style="width: 5%; height: 3rem;">
+					Info-5%
+				 </div>
+			</div>
+		</div>
+</section>
+</body>
+</html>
